@@ -2,7 +2,7 @@
   "id": "mediapager.subtitles.opensubtitles",
   "name": "OpenSubtitles",
   "description": "Official OpenSubtitles provider for movie and TV captions.",
-  "author": "Nobugsgiven",
+  "author": "MediaPager",
   "types": "subtitles",
   "sdk": "MediaPager.App.PluginContracts",
   "sdkVersion": "0.1.0"

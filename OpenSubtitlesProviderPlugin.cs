@@ -23,7 +23,7 @@ public sealed class OpenSubtitlesProviderPlugin(IPluginSettingsStore settingsSto
         Id: SourceKey,
         Name: "OpenSubtitles",
         Version: "0.1.0",
-        Author: "Nobugsgiven",
+        Author: "MediaPager",
         Description: "Official OpenSubtitles provider for movie and TV captions (API v1).");
 
     public IReadOnlyList<PluginSettingDefinition> Settings { get; } =
