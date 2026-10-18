@@ -96,7 +96,7 @@ public sealed class OpenSubtitlesProviderPlugin(IPluginSettingsStore settingsSto
 
         var apiKey = await ApiKeyAsync(cancellationToken);
         if (string.IsNullOrWhiteSpace(apiKey))
-            return null;
+            throw new OpenSubtitlesApiException("The OpenSubtitles API key is not configured.");
 
         var username = await settingsStore.GetAsync(PluginKey, UsernameSetting, cancellationToken);
         var password = await settingsStore.GetAsync(PluginKey, PasswordSetting, cancellationToken);
